@@ -1,0 +1,34 @@
+app:
+  name: "ai-genai-human-in-the-loop"
+  version: "1.0.0"
+
+approval:
+  confidence_threshold: 0.8
+  auto_approve_above: 0.95
+  auto_reject_below: 0.2
+  timeout_seconds: 3600
+  escalation_after_seconds: 1800
+
+queue:
+  max_pending_items: 1000
+  priority_enabled: true
+  assignment_strategy: "round_robin"
+
+learning:
+  enabled: true
+  min_feedback_samples: 10
+  retrain_threshold: 50
+
+audit:
+  enabled: true
+  retention_days: 90
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+
+logging:
+  level: "INFO"
+  format: "json"
+  file: "logs/app.log"

@@ -1,0 +1,15 @@
+app:
+  name: "ai-genai-human-in-the-loop"
+approval:
+  timeout_seconds: 3600
+  confidence_threshold: 0.85
+queue:
+  max_pending_items: 5000
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+logging:
+  level: "INFO"
+  format: "json"
+  file: "logs/app-prod.log"

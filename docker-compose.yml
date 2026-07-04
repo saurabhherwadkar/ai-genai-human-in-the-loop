@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  hitl-api:
+    build: .
+    container_name: human-in-the-loop
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./config:/app/config:ro
+    restart: unless-stopped

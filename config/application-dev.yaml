@@ -1,0 +1,15 @@
+app:
+  name: "ai-genai-human-in-the-loop"
+approval:
+  timeout_seconds: 600
+  confidence_threshold: 0.7
+queue:
+  max_pending_items: 100
+api:
+  host: "127.0.0.1"
+  port: 8000
+  reload: true
+logging:
+  level: "DEBUG"
+  format: "text"
+  file: "logs/app-dev.log"
