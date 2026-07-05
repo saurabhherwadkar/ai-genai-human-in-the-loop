@@ -2,6 +2,19 @@
 
 Human oversight patterns for AI workflows with approval gates, confidence-based routing, review queues, active learning from corrections, and decision audit trails.
 
+## Key Learning Objectives
+
+- Understand confidence-based routing to automatically approve, reject, or escalate AI outputs based on configurable thresholds
+- Design approval gate patterns that balance automation efficiency with human oversight requirements
+- Implement priority-based review queues with round-robin assignment to distribute workload across reviewers
+- Build active learning pipelines that capture human corrections and identify systematic error patterns
+- Apply escalation strategies that route edge cases to appropriate decision-makers based on risk and uncertainty
+- Create feedback loops where human decisions continuously improve model performance over time
+- Construct complete audit trails for compliance, traceability, and post-hoc analysis of AI-assisted decisions
+- Develop RESTful APIs that expose human-in-the-loop workflows as composable microservices
+- Configure dynamic threshold tuning that adapts routing behavior as model confidence distributions shift
+- Integrate structured logging and observability to monitor queue health, reviewer throughput, and learning progress
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [Project Structure](#project-structure)
