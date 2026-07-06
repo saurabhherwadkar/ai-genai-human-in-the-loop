@@ -2,7 +2,7 @@
 
 Human oversight patterns for AI workflows with approval gates, confidence-based routing, review queues, active learning from corrections, and decision audit trails.
 
-## Key Learning Objectives
+## Objectives
 
 - Understand confidence-based routing to automatically approve, reject, or escalate AI outputs based on configurable thresholds
 - Design approval gate patterns that balance automation efficiency with human oversight requirements
